@@ -1,0 +1,43 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 480px;
+  background-image: radial-gradient(circle at center, #00000091, #0000007e),
+    url("../images2/heroimg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*position: center;*/
+  height: 600px;
+  padding: 0;
+  margin: 0;
+  &__title {
+    display: flex;
+    justify-content: center;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  &__text {
+    display: flex;
+    display: flex;
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white);
+
+    @media screen and (min-width: 1200px) {
+      width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+    }
+  }
+
+  &__div {
+    display: flex;
+    justify-content: center;
+  }
+}

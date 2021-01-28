@@ -1,0 +1,136 @@
+.page-header {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ececec;
+  left: 0;
+  right: 0;
+  background-color: var(--white);
+}
+
+.logo-web {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--logo-web);
+}
+
+.logo {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--logo-header);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+.nav {
+  display: flex;
+  margin-left: 93px;
+  align-items: center;
+  &__site {
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--logo-header);
+  }
+}
+
+.nav__site > .nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/*.nav__site {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--logo-header);
+}*/
+
+.contacts {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--text);
+  margin-left: auto;
+  &__icon {
+    margin-right: 10px;
+  }
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  &:hover .contacts__icon,
+  &:focus .contacts__icon {
+    fill: var(--logo-web);
+  }
+}
+
+/*.contacts__icon {
+  margin-right: 10px;
+}*/
+
+/*.contacts__link:hover .contacts__icon,
+.contacts__link:focus .contacts__icon {
+  fill: var(--logo-web);
+}*/
+
+.nav__line {
+  position: relative;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover::after,
+  &:focus::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--logo-web);
+    bottom: -32px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/*.nav__line:hover::after,
+.nav__line:focus::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--logo-web);
+  bottom: -32px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}*/
